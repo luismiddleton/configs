@@ -1,0 +1,41 @@
+{
+  "name": "@luism/configs",
+  "version": "0.0.0",
+  "description": "Shared configurations for commong tooling",
+  "exports": {
+    "./prettier": {
+      "import": "./dist/prettier/index.mjs",
+      "require": "./dist/prettier/index.cjs"
+    },
+    "./rslib": {
+      "import": "./dist/rslib/index.mjs",
+      "require": "./dist/rslib/index.cjs"
+    },
+    "./vitest": {
+      "import": "./dist/vitest/index.mjs",
+      "require": "./dist/vitest/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rslib build"
+  },
+  "keywords": [
+    "typescript",
+    "configs",
+    "prettier",
+    "vitest",
+    "rslib"
+  ],
+  "author": "Luis Middleton",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/prettier": "^3.0.0",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "prettier": ">=3.0.0 <4.0.0",
+    "vitest": ">=1.0.0 <2.0.0",
+    "@rslib/core": ">=0.13.0 <1.0.0"
+  }
+}
