@@ -18,7 +18,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx rslib build"
+    "build": "npx rslib build",
+    "changeset": "changeset"
   },
   "keywords": [
     "typescript",
@@ -30,12 +31,13 @@
   "author": "Luis Middleton",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "@types/prettier": "^3.0.0",
     "typescript": "^5.9.2"
   },
   "peerDependencies": {
+    "@rslib/core": ">=0.13.0 <1.0.0",
     "prettier": ">=3.0.0 <4.0.0",
-    "vitest": ">=1.0.0 <2.0.0",
-    "@rslib/core": ">=0.13.0 <1.0.0"
+    "vitest": ">=1.0.0 <2.0.0"
   }
 }
