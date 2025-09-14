@@ -18,7 +18,8 @@
   },
   "scripts": {
     "build": "npx rslib build",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "ci:publish": "pnpm publish -r"
   },
   "keywords": [
     "typescript",
